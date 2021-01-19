@@ -15,11 +15,13 @@ Configuration
   Password can be found in the Details view in for your CloudKarafka instance.
 * `export CLOUDKARAFKA_TOPIC="username-topic"`
   Topic should be the same as your username followed by a dash before the topic.
+* `export CONSUMER_GROUP="your-name"`
+  Unique consumer group for multiple users in the tutorial. 
 
 These export commands must be run in both of the terminal windows below.
 
 ```
-git clone https://github.com/CloudKarafka/python-kafka-example.git
+git clone https://github.com/muhai-project/python-kafka-example.git
 cd python-kafka-example`
 pip install confluent_kafka
 python consumer.py
